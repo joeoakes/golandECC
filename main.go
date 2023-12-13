@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// Generate an ECC private key
-	privateKey, err := ecdsa.GenerateKey(elliptic.P256(), rand.Reader)
+	privateKey, err := ecdsa.GenerateKey(elliptic.P384(), rand.Reader)
 	if err != nil {
 		fmt.Println("Error generating private key:", err)
 		return
